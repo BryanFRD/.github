@@ -1,0 +1,30 @@
+name: Demande de fonctionnalité
+description: Proposer une amélioration ou une nouveauté
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cherchez d'abord dans les issues existantes, la proposition a peut-être déjà été
+        faite ou refusée.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Le problème
+      description: Ce qui vous bloque aujourd'hui. Décrivez le besoin, pas la solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Ce que vous proposez
+      description: Le comportement souhaité, et à quoi il ressemblerait à l'usage.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Ce que vous avez déjà essayé
+      description: Contournements, autres outils, autres approches.
+    validations:
+      required: false

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Faille de sécurité
+    url: https://github.com/BryanFRD/.github/blob/main/SECURITY.md
+    about: N'ouvrez pas d'issue publique pour une faille. Signalez-la en privé.
+  - name: Question ou aide
+    url: https://github.com/BryanFRD/.github/blob/main/SUPPORT.md
+    about: Pour une question d'utilisation, voyez le guide de support.
+  - name: Me contacter
+    url: https://bryan-ferrando.fr/#contact
+    about: Pour tout le reste.

@@ -1,0 +1,57 @@
+name: Rapport de bug
+description: Signaler un défaut
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci pour le signalement. Cherchez d'abord dans les issues existantes, ouvertes
+        comme fermées. Pour une faille de sécurité, n'utilisez pas ce formulaire, voyez
+        SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: Version ou commit
+      description: La version publiée ou le SHA du commit où vous avez vu le bug.
+      placeholder: "v1.4.2 ou a1b2c3d"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Ce qui se passe
+      description: Le comportement observé, aussi précisément que possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ce qui devrait se passer
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes de reproduction
+      description: Un exemple minimal reproductible vaut mieux qu'une longue description.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environnement
+      description: OS, navigateur, version du runtime, tout ce qui peut compter.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou trace d'erreur
+      description: Collez la sortie brute. Le formatage est automatique.
+      render: shell
+    validations:
+      required: false
